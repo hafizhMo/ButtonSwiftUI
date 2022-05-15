@@ -11,6 +11,11 @@
 		FB9562972831571400495212 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9562962831571400495212 /* ContentView.swift */; };
 		FB9562992831571600495212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9562982831571600495212 /* Assets.xcassets */; };
 		FB95629C2831571600495212 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB95629B2831571600495212 /* Preview Assets.xcassets */; };
+		FB9562A428315C2400495212 /* ButtonStyle+Send.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9562A328315C2400495212 /* ButtonStyle+Send.swift */; };
+		FB9562A62831640300495212 /* ButtonStyle+Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9562A52831640300495212 /* ButtonStyle+Like.swift */; };
+		FB9562A928316E3F00495212 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9562A828316E3F00495212 /* DeleteButton.swift */; };
+		FB9562AD28316EC700495212 /* ButtonStyle+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9562AC28316EC700495212 /* ButtonStyle+Delete.swift */; };
+		FB9562AF28316F5400495212 /* BookmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9562AE28316F5400495212 /* BookmarkButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		FB9562962831571400495212 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB9562982831571600495212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB95629B2831571600495212 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB9562A328315C2400495212 /* ButtonStyle+Send.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle+Send.swift"; sourceTree = "<group>"; };
+		FB9562A52831640300495212 /* ButtonStyle+Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle+Like.swift"; sourceTree = "<group>"; };
+		FB9562A828316E3F00495212 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		FB9562AC28316EC700495212 /* ButtonStyle+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle+Delete.swift"; sourceTree = "<group>"; };
+		FB9562AE28316F5400495212 /* BookmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 		FB9562932831571400495212 /* ButtonSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FB9562A728316E2A00495212 /* component */,
+				FB9562A228315C0D00495212 /* extension */,
 				FB9562942831571400495212 /* ButtonSwiftUIApp.swift */,
 				FB9562962831571400495212 /* ContentView.swift */,
 				FB9562982831571600495212 /* Assets.xcassets */,
@@ -65,6 +77,25 @@
 				FB95629B2831571600495212 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB9562A228315C0D00495212 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB9562A328315C2400495212 /* ButtonStyle+Send.swift */,
+				FB9562A52831640300495212 /* ButtonStyle+Like.swift */,
+				FB9562AC28316EC700495212 /* ButtonStyle+Delete.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		FB9562A728316E2A00495212 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				FB9562A828316E3F00495212 /* DeleteButton.swift */,
+				FB9562AE28316F5400495212 /* BookmarkButton.swift */,
+			);
+			path = component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9562972831571400495212 /* ContentView.swift in Sources */,
+				FB9562AF28316F5400495212 /* BookmarkButton.swift in Sources */,
 				FB9562952831571400495212 /* ButtonSwiftUIApp.swift in Sources */,
+				FB9562AD28316EC700495212 /* ButtonStyle+Delete.swift in Sources */,
+				FB9562A62831640300495212 /* ButtonStyle+Like.swift in Sources */,
+				FB9562A428315C2400495212 /* ButtonStyle+Send.swift in Sources */,
+				FB9562A928316E3F00495212 /* DeleteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ButtonSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = Z824M97CF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ButtonSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = Z824M97CF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
